@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Modeling Trail Cup Temperature During Additive Manufacturing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="is-preload">
+		<div class="container" style="max-width: 1000px;">
+			<div class="row">
+                <h2>Modeling Trail Cup Temperature During Additive Manufacturing</h2>
+                <p>
+                    <strong>Project Aim:</strong>
+                    Modeling the temperature of a shielding gas trail cup during additive manufacturing process to 
+                    reduce oxidation and improve weld quality.                
+                </p>
+                <p><strong>
+                    Background: 
+                </strong>
+                During metal additive manufacturing process, some oxidation was observed. Temperature measurements were 
+                taken during each pass on the shielding gas trail cup. It was thought that since the shielding gas trail 
+                cup was getting too hot, it was creating convection currents and disrupting the shielding effects of the argon gas.            
+            </p>
+            <img src="images/trailcup.jpg" alt="" width="800px">
+            <p><i>
+                Temperature of the shielding gas trail cup probed at points shown at each pass
+            </i></p>
+            <img src="images/plot_trailcup.JPG" alt="" width="800px">
+            <p><i>
+                Plot of temperature of shielding gas trail cup 
+            </i></p>
+
+            <p>
+                Goal of this analysis is to make a model of the shield gas trail cup. By keeping the temperature below a certain point 
+                would reduce the convection flow, and allow the shield gas assembly to work properly.
+            </p>
+
+            <p><strong>Governing Equations</strong></p>
+
+            <p>
+                Grashof Number:
+            </p>
+            <img src="images/GrashofNumber.png" alt="" width="30%">
+
+            <p>
+                Prandtl Number:
+            </p>
+            <img src="images/PrandtlNumber.png" alt="" width="30%">
+            <p>
+                Rayleigh Number:
+            </p>
+            <img src="images/RayleighNumber.png" alt="" width="30%">
+            <p>
+                Nusselt Number Horizontal Plate:
+            </p>
+            <img src="images/NusseltNumberHorizontal.png" alt="" width="30%">
+
+            <p>
+                Nusselt Number Vertical Plate:
+            </p>
+            <img src="images/NusseltNumbeVertical.png" alt="" width="70%">
+
+            <p>
+                Surface Irradiance due to Radiation:
+            </p>
+            <img src="images/raditation.png" alt="" width="70%">
+
+            <p><strong>
+                Calculation:
+            </strong></p>
+            <img src="images/TempCalc.JPG" alt="" width="150%">
+            <p><i>
+                Sample calculation result. The plot shows how the temperature increases as a function of passes. By modifying the 
+                inputs, welds can be created in a way to keep the temperature below a threshold. Welds created below this threshold 
+                should have less oxidation due to minimal convection flow.
+            </i></p>
+            <img src="images/resultplot2.png" alt="" width="90%">
+            <p><i>
+                This calculation adds certain methods to reduce trail gas cup temperature. This is done by adding a prolonged rest 
+                period after a certain amount of passes. 
+            </i></p>
+
+			</div>
+        </div>
+
+
+        
+
+	</body>
+</html>
